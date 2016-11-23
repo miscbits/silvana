@@ -56,3 +56,20 @@ $factory->define(App\Models\Team::class, function (Faker\Generator $faker) {
         'name' => $faker->name
     ];
 });
+/*
+|--------------------------------------------------------------------------
+| Product Factory
+|--------------------------------------------------------------------------
+*/
+
+$factory->define(App\Models\Product::class, function (Faker\Generator $faker) {
+    return [
+
+        'id' => '1',
+		'name' => 'laravel',
+		'description' => 'I am Batman',
+		'inventory' => '1',
+
+
+    ];
+});
