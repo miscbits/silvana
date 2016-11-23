@@ -120,15 +120,3 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('roles/search', 'RoleController@index');
     });
 });
-
-/*
-|--------------------------------------------------------------------------
-| Product Routes
-|--------------------------------------------------------------------------
-*/
-
-Route::resource('products', 'ProductsController', ['except' => ['show']]);
-Route::post('products/search', [
-    'as' => 'products.search',
-    'uses' => 'ProductsController@search'
-]);
