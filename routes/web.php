@@ -80,18 +80,6 @@ Route::group(['middleware' => ['auth']], function () {
 
     /*
     |--------------------------------------------------------------------------
-    | Team Routes
-    |--------------------------------------------------------------------------
-    */
-
-    Route::get('team/{name}', 'TeamController@showByName');
-    Route::resource('teams', 'TeamController', ['except' => ['show']]);
-    Route::post('teams/search', 'TeamController@search');
-    Route::post('teams/{id}/invite', 'TeamController@inviteMember');
-    Route::get('teams/{id}/remove/{userId}', 'TeamController@removeMember');
-
-    /*
-    |--------------------------------------------------------------------------
     | Admin
     |--------------------------------------------------------------------------
     */

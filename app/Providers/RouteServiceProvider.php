@@ -57,6 +57,7 @@ class RouteServiceProvider extends ServiceProvider
         ], function ($router) {
             require base_path('routes/web.php');
 			require base_path('routes/quarx.php');
+            require base_path('routes/products-web.php');
         });
     }
 
