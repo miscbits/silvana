@@ -13,7 +13,10 @@ class Product extends QuarxModel
     public $timestamps = true;
 
     public $fillable = [
-        // Product table data
+		'name',
+		'description',
+		'price',
+		'image',
     ];
 
     public static $rules = [
