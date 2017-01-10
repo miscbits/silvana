@@ -18,8 +18,6 @@ class PagesController extends Controller
     /**
      * Homepage.
      *
-     * @param string $url
-     *
      * @return Response
      */
     public function home()
@@ -27,6 +25,25 @@ class PagesController extends Controller
         $page = $this->pagesRepository->findPagesByURL('home');
 
         $view = view('quarx-frontend::pages.home');
+
+        if (is_null($page)) {
+            return $view;
+        }
+
+        return $view->with('page', $page);
+    }
+
+    /**
+     * About.
+     *
+     * @return Response
+     */
+
+    public function about()
+    {
+        $page = $this->pagesRepository->findPagesByURL('about');
+
+        $view = view('quarx-frontend::pages.about');
 
         if (is_null($page)) {
             return $view;
