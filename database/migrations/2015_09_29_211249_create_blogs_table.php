@@ -21,6 +21,7 @@ class CreateBlogsTable extends Migration
             $table->string('seo_description')->nullable();
             $table->string('seo_keywords')->nullable();
             $table->string('url');
+            $table->string('featured-image');
             $table->nullableTimestamps();
         });
     }

@@ -1,0 +1,1 @@
+{"version":3,"sources":["custom.scss"],"names":[],"mappings":"AAAA;EACC,gBAAgB,EAChB;;AAED;EACC,iBAAiB,EACjB","file":"custom.css","sourcesContent":["#homeHeading {\n\tfont-size: 85px;\n}\n\n.inner-page {\n\tmargin-top: 50px;\n}"]}

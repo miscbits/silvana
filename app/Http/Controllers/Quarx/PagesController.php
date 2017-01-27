@@ -43,13 +43,11 @@ class PagesController extends Controller
     {
         $page = $this->pagesRepository->findPagesByURL('about');
 
-        $view = view('quarx-frontend::pages.about');
-
-        if (is_null($page)) {
-            return $view;
+        if (empty($page)) {
+            abort(404);
         }
 
-        return $view->with('page', $page);
+        return view('quarx-frontend::pages.'.$page->template)->with('page', $page);
     }
 
     /**

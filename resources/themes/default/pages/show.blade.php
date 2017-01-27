@@ -4,10 +4,17 @@
 @section('seoKeywords') {{ $page->seo_keywords }} @endsection
 
 @section('content')
+@if($page->featured_image)
+    <header style="background-image:url({{ $page->featured_image }});min-height:50vh;">
+    	<div class="header-content">
+	    	<h1>{!! $page->title !!}</h1>
+		</div>
+    </header>
 
-<div class="container">
+@endif
 
-    <h1>{!! $page->title !!}</h1>
+<div class="container inner-page">
+
     {!! $page->entry !!}
 
 </div>

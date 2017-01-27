@@ -36,17 +36,17 @@ Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail'
 Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm');
 Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 
-/*
-|--------------------------------------------------------------------------
-| Registration
-|--------------------------------------------------------------------------
-*/
-Route::get('register', 'Auth\RegisterController@showRegistrationForm');
-Route::post('register', 'Auth\RegisterController@register');
+// /*
+// |--------------------------------------------------------------------------
+// | Registration
+// |--------------------------------------------------------------------------
+// */
+// Route::get('register', 'Auth\RegisterController@showRegistrationForm');
+// Route::post('register', 'Auth\RegisterController@register');
 
-Route::get('activate', 'Auth\ActivateController@showActivate');
-Route::get('activate/send-token', 'Auth\ActivateController@sendToken');
-Route::get('activate/token/{token}', 'Auth\ActivateController@activate');
+// Route::get('activate', 'Auth\ActivateController@showActivate');
+// Route::get('activate/send-token', 'Auth\ActivateController@sendToken');
+// Route::get('activate/token/{token}', 'Auth\ActivateController@activate');
 
 /*
 |--------------------------------------------------------------------------

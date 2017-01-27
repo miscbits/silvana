@@ -17,6 +17,7 @@ elixir(mix => {
     mix.copy('node_modules/font-awesome/fonts',
         'public/css/fonts')
        .sass('app.scss')
+       .sass('custom.scss')
        .sass('../../../node_modules/font-awesome/font-awesome.scss')
        .webpack('app.js');
 });

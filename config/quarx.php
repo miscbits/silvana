@@ -64,7 +64,7 @@ return [
     */
 
     'backend-title' => 'Quarx',
-    'backend-theme' => 'united', // cosmo, cyborg, flatly, lumen, paper, sandstone, simplex, united, yeti
+    'backend-theme' => 'cosmo', // cosmo, cyborg, flatly, lumen, paper, sandstone, simplex, united, yeti
     'registration-available' => false,
     'pagination' => 25,
 
@@ -90,6 +90,10 @@ return [
             ],
             'url'       => [
                 'type' => 'string',
+            ],
+            'featured image' => [
+                'type' => 'integer',
+                'class' => 'image-select',
             ],
             'tags'       => [
                 'type'  => 'string',
@@ -164,6 +168,10 @@ return [
             ],
             'url'       => [
                 'type' => 'string',
+            ],
+            'featured image' => [
+                'type' => 'integer',
+                'class' => 'image-select',
             ],
             'entry'       => [
                 'type'     => 'text',
@@ -277,6 +285,10 @@ return [
         'event' => [
             'title'       => [
                 'type' => 'string',
+            ],
+            'featured image' => [
+                'type' => 'integer',
+                'class' => 'image-select',
             ],
             'start_date'       => [
                 'type'  => 'string',
